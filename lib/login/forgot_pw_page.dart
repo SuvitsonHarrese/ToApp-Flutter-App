@@ -26,7 +26,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
       showDialog(
         context: context,
         builder: (context) {
-          return AlertDialog(
+          return const AlertDialog(
             content: Text(
               "Password reset link sent! Check your email. Note :IF NOT FOUND IN INBOX CHECK IN SPAM SECTION",
             ),
@@ -63,17 +63,17 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
           backgroundColor: Colors.deepPurple[200],
           elevation: 0,
           centerTitle: true,
-          title: Text("Forgot Password"),
+          title: const Text("Forgot Password"),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               'Enter Your Email and we will send you a password reset link',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 20),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             MyTextField(
@@ -82,13 +82,13 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
               obscureText: false,
               type: "email",
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             MaterialButton(
               onPressed: passwordReset,
               color: Colors.deepPurple[200],
-              child: Text(
+              child: const Text(
                 "Reset Password",
                 style: TextStyle(color: Colors.white),
               ),
